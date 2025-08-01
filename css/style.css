@@ -515,7 +515,6 @@ li {
 /*-----------------------ABOUT---------------------------*/
 .about {
   margin-top: 11.5rem;
-  border: 2px solid blueviolet;
 }
 
 .about-content {
@@ -729,7 +728,7 @@ table {
 }
 
 .schedule-table {
-  max-width: 100%;
+  width: 100%;
 }
 
 .schedule-table__header {
@@ -1039,7 +1038,7 @@ tbody td {
 
 .testimonials-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 1.875rem;
   overflow-x: auto;
   scrollbar-width: none;
@@ -1132,7 +1131,7 @@ tbody td {
 .shorts-wrapper {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 1.875rem;
   overflow: auto;
   scrollbar-width: none;
@@ -1722,6 +1721,19 @@ tbody td {
 
 /* ---------------------MEDIA-500------------------------ */
 @media (max-width : 500px) {
+  .burger-icon {
+    width: 2.5rem;
+    right: 12%;
+  }
+
+  .burger-line::before {
+    width: 3rem;
+  }
+
+  .burger-line::after {
+    width: 3rem;
+  }
+
   .btn {
     font-size: 0.8rem;
     padding: 0.8rem 1rem;
@@ -1770,6 +1782,10 @@ tbody td {
 
   .hero-buttons {
     flex-direction: column;
+  }
+
+  .hero-timer {
+    margin-top: 2.625rem;
   }
 
   .time-box {
@@ -1974,6 +1990,10 @@ tbody td {
   .contact-right__title {
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
+  }
+
+  .form-input textarea {
+    min-height: 15rem;
   }
 
   .footer-nav-list {
