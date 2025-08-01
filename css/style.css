@@ -328,18 +328,21 @@ li {
 
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin-top: 7.625rem;
   padding-bottom: 3.625rem;
 
 }
 
 .time-box {
-  color: transparent;
-  font-weight: 700;
+  font-family: monospace;
   font-size: 9rem;
-  opacity: 0.5;
-  -webkit-text-stroke: 2px var(--main-light);
+  font-weight: 700;
+  text-shadow:
+    1px 1px 0 var(--main-light),
+    -1px 1px 0 var(--main-light),
+    1px -1px 0 var(--main-light),
+    -1px -1px 0 var(--main-light);
 }
 
 /*-----------------------CATEGORY---------------------------*/
