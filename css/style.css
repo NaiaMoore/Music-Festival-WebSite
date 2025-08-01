@@ -1205,9 +1205,7 @@ tbody td {
 
 .contacts-wrapper {
   display: flex;
-  align-items: flex-start;
   justify-content: center;
-  height: 100%;
 
 }
 
@@ -1215,7 +1213,6 @@ tbody td {
   flex: 0 0 44%;
   background: var(--blue);
   padding: 7.5rem 1.5rem 0 5rem;
-  height: 100%;
 }
 
 .contact-left__title {
@@ -1270,7 +1267,6 @@ tbody td {
   flex: 0 0 56%;
   padding: 6.5rem 0 0 8.125rem;
   background: rgba(34, 34, 34, 0.03);
-  height: 100%;
 }
 
 .contact-right__title {
@@ -1286,6 +1282,7 @@ tbody td {
   flex-direction: column;
   gap: 1.875rem;
   max-width: 35.625rem;
+  margin-bottom: 6.5rem;
 }
 
 .form-input {
